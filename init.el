@@ -61,7 +61,8 @@ values."
      (gtags :disabled-for clojure emacs-lisp javascript latex python shell-scripts)
      (shell :variables shell-default-shell 'eshell)
      docker
-     ;; latex
+     (latex :variables latex-enable-auto-fill t
+            latex-enable-folding t)
      deft
      markdown
      org
@@ -378,6 +379,9 @@ values."
   ;; force horizontal split window
   (setq split-width-threshold 120)
   (linum-relative-on)
+  (global-linum-mode)
+  (setq column-number-mode)
+  (global-set-key (kbd ",") #'(lambda () (interactive) (insert ", ")))
 
   (spacemacs|add-company-backends :modes text-mode)
 

@@ -75,3 +75,4 @@
  '(web-mode-current-element-highlight-face ((t (:background "dark gray")))))
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(add-hook 'doc-view-mode-hook 'auto-revert-mode )
