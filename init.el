@@ -32,6 +32,7 @@ values."
    dotspacemacs-configuration-layers
    '(
      ivy
+     ycmd
      better-defaults
      github
      ranger
@@ -69,6 +70,10 @@ values."
      shaders
      yaml
      react
+     pyvenv
+     pyenv
+     ;; (pyenv :variables
+     ;;        python-auto-set-local-pyenv-version on-visit)
      (python :variables
              python-test-runner '(nose pytest))
      (ruby :variables ruby-version-manager 'chruby)
@@ -76,6 +81,7 @@ values."
      lua
      html
      javascript
+     octave
      (typescript :variables
                 typescript-fmt-on-save nil
                 typescript-fmt-tool 'typescript-formatter)
@@ -125,6 +131,7 @@ You should not put any user code in there besides modifying the variable
 values."
   ;; This setq-default sexp is an exhaustive list of all the supported
   ;; spacemacs settings.
+  ;;(setq python-shell-virtualenv-path "~/tensorflowEnv")
   (setq-default
    ;; If non nil ELPA repositories are contacted via HTTPS whenever it's
    ;; possible. Set it to nil if you have no way to use HTTPS in your
