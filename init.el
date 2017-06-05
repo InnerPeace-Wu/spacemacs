@@ -70,8 +70,8 @@ values."
      shaders
      yaml
      react
-     pyvenv
-     pyenv
+     ;; pyvenv
+     ;; pyenv
      ;; (pyenv :variables
      ;;        python-auto-set-local-pyenv-version on-visit)
      (python :variables
