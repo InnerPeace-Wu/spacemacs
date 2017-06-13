@@ -388,17 +388,19 @@ values."
   (linum-relative-on)
   (global-linum-mode)
   (setq column-number-mode)
+
+
   (global-set-key (kbd ",") #'(lambda () (interactive) (insert ", ")))
 
   ;; (global-set-key (kbd "-") #'(lambda () (interactive) (insert "- ")))
   ;; (global-set-key (kbd "+") #'(lambda () (interactive) (insert "+ ")))
-  (global-set-key (kbd "&") #'(lambda () (interactive) (insert "& ")))
+  ;; (global-set-key (kbd "&") #'(lambda () (interactive) (insert "& ")))
 
   ;; (global-set-key (kbd "*") #'(lambda () (interactive) (insert "* ")))
   ;; (global-set-key (kbd "/") #'(lambda () (interactive) (insert "/ ")))
-  (global-set-key (kbd "%") #'(lambda () (interactive) (insert "% ")))
+  ;; (global-set-key (kbd "%") #'(lambda () (interactive) (insert "% ")))
   ;; (global-set-key (kbd ":") #'(lambda () (interactive) (insert ": ")))
-  (global-set-key (kbd "^") #'(lambda () (interactive) (insert "^ ")))
+  ;; (global-set-key (kbd "^") #'(lambda () (interactive) (insert "^ ")))
 
   (spacemacs|add-company-backends :modes text-mode)
 
