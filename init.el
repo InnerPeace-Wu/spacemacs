@@ -70,8 +70,8 @@ values."
      shaders
      yaml
      react
-     pyvenv
-     pyenv
+     ;; pyvenv
+     ;; pyenv
      ;; (pyenv :variables
      ;;        python-auto-set-local-pyenv-version on-visit)
      (python :variables
@@ -83,8 +83,8 @@ values."
      javascript
      octave
      (typescript :variables
-                typescript-fmt-on-save nil
-                typescript-fmt-tool 'typescript-formatter)
+                 typescript-fmt-on-save nil
+                 typescript-fmt-tool 'typescript-formatter)
      emacs-lisp
      (clojure :variables clojure-enable-fancify-symbols t)
      racket
@@ -97,7 +97,8 @@ values."
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
-   ;; packages, then consider creating a layer. You can also put the
+   ;; packages,
+   ;; then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
    dotspacemacs-additional-packages '(sicp)
    ;; A list of packages that cannot be updated.
@@ -392,13 +393,13 @@ values."
 
   ;; (global-set-key (kbd "-") #'(lambda () (interactive) (insert "- ")))
   ;; (global-set-key (kbd "+") #'(lambda () (interactive) (insert "+ ")))
-  (global-set-key (kbd "&") #'(lambda () (interactive) (insert "& ")))
+  ;; (global-set-key (kbd "&") #'(lambda () (interactive) (insert "& ")))
 
   ;; (global-set-key (kbd "*") #'(lambda () (interactive) (insert "* ")))
   ;; (global-set-key (kbd "/") #'(lambda () (interactive) (insert "/ ")))
-  (global-set-key (kbd "%") #'(lambda () (interactive) (insert "% ")))
+  ;; (global-set-key (kbd "%") #'(lambda () (interactive) (insert "% ")))
   ;; (global-set-key (kbd ":") #'(lambda () (interactive) (insert ": ")))
-  (global-set-key (kbd "^") #'(lambda () (interactive) (insert "^ ")))
+  ;; (global-set-key (kbd "^") #'(lambda () (interactive) (insert "^ ")))
 
   (spacemacs|add-company-backends :modes text-mode)
 
